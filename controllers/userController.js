@@ -38,7 +38,7 @@ const registerUser = asyncHandler(async(req, res) => {
         path: "/",
         httpOnly: true,
         expires: new Date(Date.now() + 1000 * 86400), // 24hrs
-        sameSites: "none",
+        sameSite: "none",
         secure: true
     })
 
@@ -90,7 +90,7 @@ const registerAdmin = asyncHandler(async(req, res) => {
         path: "/",
         httpOnly: true,
         expires: new Date(Date.now() + 1000 * 86400), // 24hrs
-        sameSites: "none",
+        sameSite: "none",
         secure: true
     })
 
@@ -133,7 +133,7 @@ const loginUser = asyncHandler(async (req, res) => {
         path: "/",
         httpOnly: true,
         expires: new Date(Date.now() + 1000 * 86400), // 24hrs
-        sameSites: "none",
+        sameSite: "none",
         secure: true
     })
 
